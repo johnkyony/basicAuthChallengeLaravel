@@ -1,0 +1,17 @@
+{
+  "name": "workspace",
+  "description": "",
+  "main": "",
+  "authors": [
+    "john  kyony <jkyony@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
