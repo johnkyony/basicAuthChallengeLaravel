@@ -15,22 +15,25 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// route to show the login form 
+// // route to show the login form 
 
-Route::get('login' , array('uses' => 'LoginController@showLogin'));
+// Route::get('login' , array('uses' => 'LoginController@showLogin'));
 
-//route to process the form 
-Route::post('login' , array('uses' => 'LoginController@doLogin'));
+// //route to process the form 
+// Route::post('login' , array('uses' => 'LoginController@doLogin'));
 
-//route to Home page
-Route::get('Home' , array('uses' => 'HomeController@index'));
+// //route to Home page
+// Route::get('Home' , array('uses' => 'HomeController@index'));
 
 //route to about page
 
-Route::get('About' , array('uses' => 'AboutController@index'));
+Route::get('/about' , array('uses' => 'AboutController@index'));
 
 //route to the blog page
 
-Route::get('Blog' , array('uses' => 'BlogController@index'));
+Route::get('/blog' , array('uses' => 'BlogController@index'));
 
-Route::get('logout' , array('uses' => 'LoginController@doLogout'));
+// Route::get('logout' , array('uses' => 'LoginController@doLogout'));
+Route::auth();
+
+Route::get('/home', 'HomeController@index');

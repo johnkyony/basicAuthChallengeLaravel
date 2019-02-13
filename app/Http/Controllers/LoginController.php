@@ -1,6 +1,11 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+
+// auth library
+use Illuminate\Support\Facades\Auth;
+
+
 use App\User;
 use View;
 class LoginController extends Controller{
